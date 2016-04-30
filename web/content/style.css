@@ -1,6 +1,83 @@
-.main{
-    width: 376px;
-    height: 668px;
+body {
+    width: 375px;
+    height: 667px;
     margin: auto;
     border: gray 1px solid;
+    font-family: open-sans,sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #fec40e;
+    margin-top: 0;
+    color: #0c45a7;
+}
+
+header *{
+    margin-top: 0;
+}
+
+header h1{
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+header p{
+    position: relative;
+    top: -18px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#main{
+    height: calc(100% - 135px);
+    background-color: #a2c7e9
+}
+
+#main section{
+    height: 100%;
+    overflow: auto;
+}
+
+#overview{
+    display: block;
+}
+
+#details{
+    display: none;
+}
+
+#reserve{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 75px;
+    background: #14446f;
+}
+
+footer label{
+    color: white;
+}
+
+footer option{
+    text-align: center;
+}
+
+footer select{
+    text-align: center;
+}
+
+footer div{
+    padding: 5px;
+}
+
+.unlimited{
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
 }
