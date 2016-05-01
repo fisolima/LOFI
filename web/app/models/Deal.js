@@ -1,10 +1,10 @@
 "use strict";
 
 function Deal(){
-    this.id = '';
-    this.name = '';
-    this.address = '';
-    this.category = '';
+    this.id = 0;
+    this.productName = '';
+    this.dealerName = '';
+    this.dealerAddress = '';
     this.prize = 0;
     this.distance = 0;
     this.openHours = {

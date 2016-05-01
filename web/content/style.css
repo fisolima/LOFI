@@ -42,16 +42,9 @@ header p{
     overflow: auto;
 }
 
-#overview{
-    display: block;
-}
-
-#details{
-    display: none;
-}
-
-#reserve{
-    display: none;
+#overview p{
+    text-align: center;
+    padding-top: 100px;
 }
 
 footer{
@@ -80,4 +73,61 @@ footer div{
     font-weight: bold;
     font-style: italic;
     color: gray;
+}
+
+.dealItem{
+    width: 345px;
+    height:75px;
+    border: #a11d1d solid 5px;
+    border-radius: 8px;
+    background-color: #f7cb60;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.dealItem div{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.dealItem div:first-child{
+    margin-top: 5px;
+}
+
+.dealItem:hover{
+    background-color: #d0ac55;
+}
+
+.dealItem:first-child{
+    margin-top: 8px;
+}
+
+.reserveField{
+    padding: 5px 10px
+}
+
+.reserveField:first-child{
+    padding-top: 20px;
+}
+
+.reserveButtonArea{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+button, input[type='submit']{
+    height: 40px;
+    width: 100px;
+    border: #0c45a7 solid 2px;
+    border-radius: 4px;
+    background-color: #84bae5;
+    color: black;
+}
+
+.detailValue{
+    background-color: lightgray;
+    height: 20px;
+    border: gray solid 1px;
+    border-radius: 3px;
 }

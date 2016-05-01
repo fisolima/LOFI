@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/pippo/LOFI/LOFI2/nbproject/build-impl.xml</file>
+            <file>file:/home/pippo/LOFI/LOFI2/web/app/app.js</file>
+            <file>file:/home/pippo/LOFI/LOFI2/web/index.html</file>
+            <file>file:/home/pippo/LOFI/LOFI2/web/app/models/Deal.js</file>
             <file>file:/home/pippo/LOFI/LOFI2/src/java/test/Test.java</file>
+            <file>file:/home/pippo/LOFI/LOFI2/web/content/style.css</file>
         </group>
     </open-files>
 </project-private>
