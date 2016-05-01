@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOFI - Local Deals Finder</title>
+    <meta charset="UTF-8">
+    <link href="content/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header>
+        <h1>LoFi</h1>
+        <p>Local Deals Finder</p>
+    </header>
+    <div id="main">
+        <section id="overview" class="mainSection">
+            <p>Loading deals, please wait</p>
+        </section>
+        
+        <section id="details" class="mainSection">
+            <div id="dealDetails">
+                <div class="reserveField">
+                    <label>Product:</label><br>
+                    <input type="text" id="detailProduct" class="detailValue" readonly>
+                </div>
+                <div class="reserveField">
+                    <label>Prize:</label><br>
+                    <input type="text" id="detailPrize" class="detailValue" readonly>
+                </div>
+                <div class="reserveField">
+                    <label>Dealer:</label><br>
+                    <input type="text" id="detailDealer" class="detailValue" readonly>
+                </div>
+                <div class="reserveField">
+                    <label>Dealer Address:</label><br>
+                    <input type="text" id="detailAddress" class="detailValue" readonly>
+                </div>
+                <div class="reserveField">
+                    <label>Opening time:</label><br>
+                    <input type="text" id="detailOpeningTime" class="detailValue" readonly>
+                </div>
+                <div class="reserveField">
+                    <label>Stock quantity:</label><br>
+                    <input type="text" id="detailStock" class="detailValue" readonly>
+                </div>
+            </div>
+            <button id="detailsBack">Back</button>
+            <button id="detailsConfirm">Confirm</button>
+        </section>
+        
+        <section id="reserve" class="mainSection">
+            <div class="reserveArea">
+                <form id="reserveForm">
+                    <div class="reserveField">
+                        <label>Name:</label><br>
+                        <input type="text" id="reserveName" name="reserveName" required placeholder="Enter your name">
+                    </div>
+                    <div class="reserveField">
+                        <label>Address:</label><br>
+                        <input type="text" id="reserveAddress" name="reserveAddress" required placeholder="Enter your address">
+                    </div>
+                    <div class="reserveField">
+                        <label>Payment method:</label><br>
+                        <select>
+                            <option selected="selected">Paypal</option>
+                            <option>Visa</option>
+                            <option>Mastercard</option>
+                        </select>
+                    </div>
+                    <div class="reserveField">
+                        <label>Pick up in:</label><br>
+                        <input type="text" id="reservePickUpTime" class="detailValue" readonly>
+                    </div>
+                    <div class="reserveButtonArea">
+                        <button id="requestCancel">Cancel</button>
+                        <input type="submit" id="requestConfirm" value="Make It!">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <label>Max distance: </label><select id="distance"></select><br>
+            <label>Max prize: </label><select id="prize"></select>
+        </div>
+    </footer>
+    <script src="app/globals.js" type="text/javascript"></script>
+    <script src="app/models/Deal.js" type="text/javascript"></script>
+    <script src="app/models/DealReservation.js" type="text/javascript"></script>
+    <script src="app/services/DealService.js" type="text/javascript"></script>
+    <script src="app/services/DealRenderHelper.js" type="text/javascript"></script>
+    <script src="app/app.js" type="text/javascript"></script>
+    <script>
+        window.onload = function(){
+            lofi.app.start();
+        };
+    </script>
+</body>
+</html>

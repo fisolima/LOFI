@@ -4,10 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/pippo/LOFI/LOFI2/web/app/app.js</file>
-            <file>file:/home/pippo/LOFI/LOFI2/web/index.html</file>
-            <file>file:/home/pippo/LOFI/LOFI2/web/app/models/Deal.js</file>
-            <file>file:/home/pippo/LOFI/LOFI2/src/java/test/Test.java</file>
-            <file>file:/home/pippo/LOFI/LOFI2/web/content/style.css</file>
+            <file>file:/home/pippo/LOFI/LOFI2/src/java/lofi/controllers/DealController.java</file>
+            <file>file:/home/pippo/LOFI/LOFI2/web/app/services/DealService.js</file>
+            <file>file:/home/pippo/LOFI/LOFI2/web/app/models/DealReservation.js</file>
+            <file>file:/home/pippo/LOFI/LOFI2/src/java/lofi/DAL/DealRepository.java</file>
         </group>
     </open-files>
 </project-private>
