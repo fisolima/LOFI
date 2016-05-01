@@ -23,7 +23,9 @@ public class DealController extends HttpServlet {
     {
         response.setContentType("application/json");
         
-        DealRepository repository = new DealRepository();
+        String connectionString = getServletContext().getInitParameter("MySQLConnection");
+        
+        DealRepository repository = new DealRepository(connectionString);
         
         try{
             double posX = Double.parseDouble(request.getParameter("x"));
@@ -62,7 +64,9 @@ public class DealController extends HttpServlet {
         
         DealReservation reservation = gson.fromJson(json.toString(), DealReservation.class);
         
-        DealRepository repository = new DealRepository();
+        String connectionString = getServletContext().getInitParameter("MySQLConnection");
+        
+        DealRepository repository = new DealRepository(connectionString);
         
         try{
             repository.AddDealReservation(reservation);

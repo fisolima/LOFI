@@ -16,10 +16,15 @@ import lofi.models.DealReservation;
 
 public class DealRepository {
 
+    private String connString;
     private Connection connection = null;
     private Statement statement = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
+    
+    public DealRepository(String connectionString){
+        connString = connectionString;
+    }
     
     public List<Deal> GetDeals(double posX, double posY) throws Exception
     {
@@ -29,7 +34,7 @@ public class DealRepository {
         try{
             Class.forName("com.mysql.jdbc.Driver");
         
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/LOFI?" + "user=lofiAdmin&password=12345678aA");
+            connection = DriverManager.getConnection(connString);
 
             statement = connection.createStatement();
             resultSet = statement.executeQuery(
@@ -79,7 +84,7 @@ public class DealRepository {
         try{
             Class.forName("com.mysql.jdbc.Driver");
         
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/LOFI?" + "user=lofiAdmin&password=12345678aA");
+            connection = DriverManager.getConnection(connString);
             
             preparedStatement = connection
               .prepareStatement(
